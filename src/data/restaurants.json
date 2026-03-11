@@ -1,0 +1,22 @@
+[
+  {
+    "id": "ae5ea704-09dc-4e9d-b2cb-8c9c058f1d07",
+    "name": "Test 1",
+    "address": "123 main street ",
+    "phone": "123-456-7891",
+    "website": "",
+    "menuLink": "",
+    "description": "This is a test for TEST 1",
+    "featured": false
+  },
+  {
+    "id": "b1450c5a-00d4-4e84-8a72-c2c3e80383a2",
+    "name": "test 2",
+    "address": "test 2",
+    "phone": "22222222222222",
+    "website": "",
+    "menuLink": "",
+    "description": "test",
+    "featured": false
+  }
+]

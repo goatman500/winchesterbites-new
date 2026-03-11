@@ -1,0 +1,44 @@
+[
+  {
+    "id": "2782db7b-75c4-47c2-a112-2220d5030788",
+    "name": "Conner Brach",
+    "email": "admin@winchesterbites.com",
+    "passwordHash": "$2b$10$lm2Oxcm.2QBrfNFS09LTZOZ4Oe0w8eY5E1Ts1fKd2TEiZ0.ofQZTS",
+    "role": "admin"
+  },
+  {
+    "id": "0a1db529-c4e0-4a0b-9cdd-f08883b821cb",
+    "name": "Conner Brach",
+    "email": "cmbrach5@gmail.com",
+    "passwordHash": "$2b$10$kiAnENlro.VX8MyTjSdQDObLgkIVDm83IM5YfrebuygT2CRfTnmQ2",
+    "role": "admin"
+  },
+  {
+    "id": "d14bfeb5-7011-4d6c-aa31-90ac5f4b6e9c",
+    "name": "conner brach",
+    "email": "conner.brach@outlook.com",
+    "passwordHash": "$2b$10$hS7/8EBU3REJS9a8.wIRk.tmJmFkcxijV/MjgupTtB.QYlTM.pBjm",
+    "role": "restaurant"
+  },
+  {
+    "id": "44b35096-c7a6-43d6-bb9b-9235d697621a",
+    "name": "User 1",
+    "email": "user1@gmail.com",
+    "passwordHash": "$2b$10$XwzyTLkQmMEz18ojzaqkl.tJW2UCuDIqJCQzofH4Lw8yAL37bNhd2",
+    "role": "restaurant"
+  },
+  {
+    "id": "53eb14d8-ff90-4ec1-8989-ee7cc6acdb13",
+    "name": "Mackenzie Brach",
+    "email": "tree21hugger@gmail.com",
+    "passwordHash": "$2b$10$xevwk52WtmXbkNz0ubuFWOfL6GhqK6vuLCRD/3EcCfRpNzD.iTX8q",
+    "role": "restaurant"
+  },
+  {
+    "id": "50dc2611-7a1d-4750-9598-2bcc4702a9b6",
+    "name": "Conner Brach",
+    "email": "earth.muffin2025@gmail.com",
+    "passwordHash": "$2b$10$wEvTwKw4lp8fRyz/90ouH.5j3PG67vBdEdKNDgQaJjFBBrEcSpA3e",
+    "role": "restaurant"
+  }
+]
