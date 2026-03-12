@@ -1,5 +1,5 @@
 /* Bubble button style for navbar */
-.bubble-btn {
+ .bubble-btn {
   background: #60a5fa;
   color: #111 !important;
   border-radius: 9999px;
@@ -12,7 +12,14 @@
   box-shadow: 0 2px 8px 0 rgba(96, 165, 250, 0.10);
   transition: background 0.2s, color 0.2s, transform 0.2s;
   display: inline-block;
-}
+ }
+ @media (max-width: 640px) {
+   .bubble-btn {
+     min-width: 70px !important;
+     font-size: 0.85rem !important;
+     padding: 0.45rem 0 !important;
+   }
+ }
 .bubble-btn:hover {
   background: #3b82f6;
   color: #111 !important;
@@ -30,6 +37,13 @@
   transition: background 0.2s, color 0.2s, transform 0.2s;
   display: inline-block;
   border: none;
+}
+@media (max-width: 640px) {
+  .navbar-btn {
+    min-width: 70px !important;
+    font-size: 0.85rem !important;
+    padding: 0.45rem 0 !important;
+  }
 }
 /* Admin dashboard action buttons: lighter blue, consistent size */
 .admin-action-btn {
