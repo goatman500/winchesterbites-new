@@ -11,16 +11,24 @@ export default function ContactPage() {
     setForm({ ...form, [e.target.name]: e.target.value });
   }
 
-  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    // Here you would send the form data to your backend or email service
     if (!form.name || !form.email || !form.message) {
       setError("All fields are required.");
       return;
     }
+    // Send to API to email you
+    const res = await fetch("/api/notify-signup", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ name: form.name, email: form.email, message: form.message }),
+    });
+    if (!res.ok) {
+      setError("Failed to send message. Please try again later.");
+      return;
+    }
     setSubmitted(true);
     setError("");
-    // Reset form (optional)
     setForm({ name: "", email: "", message: "" });
   }
 
