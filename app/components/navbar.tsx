@@ -34,33 +34,34 @@ export function Navbar() {
 
   return (
     <header className="border-b border-slate-200 bg-white">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <Link href="/" className="flex items-center gap-3">
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-2 py-2 sm:px-6 sm:py-4">
+        <Link href="/" className="flex items-center gap-2 sm:gap-3">
           <Image
             src="/WB LOGO.PNG"
             alt="WinchesterBites"
-            width={80}
-            height={80}
+            width={44}
+            height={44}
             priority
+            className="sm:w-[80px] sm:h-[80px] w-[44px] h-[44px]"
           />
-          <span className="text-2xl font-black tracking-tight text-slate-900">
+          <span className="text-lg sm:text-2xl font-black tracking-tight text-slate-900">
             WinchesterBites
           </span>
         </Link>
-        <div className="flex items-center gap-3">
-          <Link href="/" className="navbar-btn bubble-btn">Return to Home</Link>
+        <div className="flex items-center gap-2 sm:gap-3">
+          <Link href="/" className="navbar-btn bubble-btn min-w-[90px] sm:min-w-[160px] text-xs sm:text-base px-2 sm:px-0 py-2 sm:py-3">Return to Home</Link>
           {!user && (
-            <Link href="/login" className="navbar-btn bubble-btn">Log In</Link>
+            <Link href="/login" className="navbar-btn bubble-btn min-w-[90px] sm:min-w-[160px] text-xs sm:text-base px-2 sm:px-0 py-2 sm:py-3">Log In</Link>
           )}
           {user && (
             <>
               <Link
                 href={user.role === "admin" ? "/admin/restaurants" : "/dashboard"}
-                className="navbar-btn bubble-btn"
+                className="navbar-btn bubble-btn min-w-[90px] sm:min-w-[160px] text-xs sm:text-base px-2 sm:px-0 py-2 sm:py-3"
               >
                 Dashboard
               </Link>
-              <LogoutButton className="navbar-btn bubble-btn" />
+              <LogoutButton className="navbar-btn bubble-btn min-w-[90px] sm:min-w-[160px] text-xs sm:text-base px-2 sm:px-0 py-2 sm:py-3" />
             </>
           )}
         </div>
