@@ -30,6 +30,14 @@ export function Navbar() {
       }
     }
     fetchUser();
+    // Listen for login/logout events and re-fetch user
+    const handler = () => fetchUser();
+    window.addEventListener("login", handler);
+    window.addEventListener("logout", handler);
+    return () => {
+      window.removeEventListener("login", handler);
+      window.removeEventListener("logout", handler);
+    };
   }, []);
 
   return (
